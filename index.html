@@ -1,14 +1,23 @@
-<!DOCTYPE html> <!-- Corrigido: adicionei o '>' que faltava -->
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeDesign BR</title>
+    
+    <!-- Logo que aparece na aba do navegador (Favicon) -->
+    <link rel="icon" type="image/png" href="Logo moderno _CodeDesign BR_.png">
+    
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>CodeDesign BR</h1>
+        <div class="logo-container">
+            <!-- Logo que aparece no topo da página -->
+            <img src="Logo moderno _CodeDesign BR_.png" alt="Logo CodeDesign BR" width="50">
+            <h1>CodeDesign BR</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -18,32 +27,32 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h2>BEM-VINDO ao CodeDesign BR</h2>
-        <p>Sua solução completa para design e desenvolvimento web.</p>
-    </section>
+    <main>
+        <section id="home">
+            <h2>BEM-VINDO ao CodeDesign BR</h2>
+            <p>Sua solução completa para design e desenvolvimento web.</p>
+        </section>
 
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <ul>
-            <li>Design Web</li>
-            <li>Desenvolvimento Web</li>
-            <li>Otimização SEO</li>
-            <li>Criação de Conteúdo</li>
-        </ul>
-    </section>
+        <section id="services">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Design Web</li>
+                <li>Desenvolvimento Web</li>
+                <li>Otimização SEO</li>
+                <li>Criação de Conteúdo</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>Contato</h2>
-        <!-- Link do WhatsApp que você criou -->
-        <p>WhatsApp: <a href="https://wa.me/5551998670729" target="_blank" id="btn-whats">Entre em contato</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>WhatsApp: <a href="https://wa.me" target="_blank" id="btn-whats">Entre em contato</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 CodeDesign BR</p>
     </footer>
 
-    <!-- Importante: O JavaScript deve vir antes do fechamento do body -->
     <script src="script.js"></script>
 </body>
 </html>
