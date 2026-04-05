@@ -1,0 +1,74 @@
+/* Configurações Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+/* Estilo dos Links de Contato (WhatsApp/E-mail) */
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
