@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeDesign BR</title>
+
+    <!-- Google AdSense - Script Principal -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4884573718974501"
+     crossorigin="anonymous"></script>
     
     <!-- Configuração do Logo na Aba (Favicon) -->
-    <!-- O ?v=1 força o navegador a atualizar o ícone e ignorar o cache antigo -->
     <link rel="icon" type="image/png" href="logo.png?v=1">
     <link rel="shortcut icon" href="logo.png?v=1" type="image/x-icon">
     <link rel="apple-touch-icon" href="logo.png?v=1">
     
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Estilo básico para o anúncio não bagunçar o design */
+        .ad-container {
+            margin: 40px auto;
+            text-align: center;
+            max-width: 100%;
+            overflow: hidden;
+            background: #f9f9f9; /* Fundo leve para o anúncio */
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <!-- Logo que aparece no topo da página -->
             <img src="logo.png" alt="Logo CodeDesign BR" width="50">
             <h1>CodeDesign BR</h1>
         </div>
@@ -45,6 +60,12 @@
                 <li>Criação de Conteúdo</li>
             </ul>
         </section>
+
+        <!-- ESPAÇO PARA O ANÚNCIO (Fica centralizado e bonito aqui) -->
+        <div class="ad-container">
+            <p style="font-size: 10px; color: #999; margin-bottom: 5px;">Publicidade</p>
+            <!-- O Google AdSense vai inserir o anúncio automaticamente aqui se você ativar os "Anúncios Automáticos" no painel deles -->
+        </div>
 
         <section id="contact">
             <h2>Contato</h2>
