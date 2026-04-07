@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeDesign BR</title>
+    <title>CodeDesign BR | Design & Desenvolvimento</title>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4884573718974501"
+    <!-- Google AdSense - Script Único (Gerencia anúncios automáticos e manuais) -->
+    <script async src="https://googlesyndication.com"
      crossorigin="anonymous"></script>
     
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="logo.png?v=1">
     <link rel="shortcut icon" href="logo.png?v=1" type="image/x-icon">
     <link rel="apple-touch-icon" href="logo.png?v=1">
@@ -15,16 +17,22 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Estilo básico para o anúncio não bagunçar o design */
+        /* Estilo para o anúncio não quebrar o layout */
         .ad-container {
             margin: 40px auto;
             text-align: center;
             max-width: 100%;
             overflow: hidden;
-            background: #f9f9f9; 
-            padding: 10px;
+            background: #f4f4f4; 
+            padding: 15px;
             border-radius: 8px;
-            min-height: 100px; /* Garante um espaço mínimo visual */
+            min-height: 100px;
+        }
+        /* Garantindo que o link do Whats pareça um botão se quiser */
+        #btn-whats {
+            font-weight: bold;
+            color: #25d366;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -47,28 +55,27 @@
     <main>
         <section id="home">
             <h2>BEM-VINDO ao CodeDesign BR</h2>
-            <p>Sua solução completa para design e desenvolvimento web.</p>
+            <p>Sua solução completa para design e desenvolvimento web moderno e seguro.</p>
         </section>
 
         <section id="services">
             <h2>Nossos Serviços</h2>
             <ul>
-                <li>Design Web</li>
-                <li>Desenvolvimento Web</li>
+                <li>Design Web (Canva para HTML)</li>
+                <li>Desenvolvimento Web Seguro</li>
                 <li>Otimização SEO</li>
-                <li>Criação de Conteúdo</li>
+                <li>Consultoria Técnica</li>
             </ul>
         </section>
 
-        <!-- ESPAÇO PARA O ANÚNCIO (Bloco de Anúncio Manual) -->
+        <!-- BLOCO DE ANÚNCIO MANUAL -->
         <div class="ad-container">
             <p style="font-size: 10px; color: #999; margin-bottom: 5px;">Publicidade</p>
             
-            <!-- BLOCO DE ANÚNCIO CONFIGURADO -->
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-4884573718974501"
-                 data-ad-slot="0000000000" 
+                 data-ad-slot="INSIRA_AQUI_O_NUMERO_DO_SLOT" 
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
@@ -78,12 +85,13 @@
 
         <section id="contact">
             <h2>Contato</h2>
-            <p>WhatsApp: <a href="https://wa.me" target="_blank" id="btn-whats">Entre em contato</a></p>
+            <!-- Lembre-se de colocar seu número após o / no link abaixo -->
+            <p>WhatsApp: <a href="https://wa.me" target="_blank" id="btn-whats">Falar com o Especialista</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 CodeDesign BR</p>
+        <p>&copy; 2026 CodeDesign BR - Desenvolvido com foco em performance e segurança.</p>
     </footer>
 
     <script src="script.js"></script>
