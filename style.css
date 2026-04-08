@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: #0f172a;
   color: white;
 }
@@ -14,12 +14,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
   background: #020617;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo-area {
@@ -29,23 +25,7 @@ header {
 }
 
 .logo {
-  height: 50px;
-}
-
-header h1 {
-  font-size: 20px;
-}
-
-/* MENU */
-nav a {
-  margin-left: 20px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #22c55e;
+  height: 40px;
 }
 
 /* HERO */
@@ -54,20 +34,15 @@ nav a:hover {
   padding: 100px 20px;
 }
 
-.hero h2 {
-  font-size: 32px;
+.urgencia {
+  color: #22c55e;
   margin-bottom: 10px;
-}
-
-.hero p {
-  margin-bottom: 20px;
-  opacity: 0.8;
 }
 
 /* BOTÃO */
 .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 15px 30px;
   background: #22c55e;
   color: black;
   border-radius: 8px;
@@ -77,17 +52,6 @@ nav a:hover {
 
 .btn:hover {
   transform: scale(1.05);
-  background: #16a34a;
-}
-
-/* SEÇÕES */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-section h2 {
-  margin-bottom: 20px;
 }
 
 /* CARDS */
@@ -95,44 +59,28 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 20px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .card {
   background: #1e293b;
   padding: 30px;
   border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background: #334155;
-}
-
-/* FOOTER */
-footer {
-  background: #020617;
-  padding: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 
-footer a {
-  color: #22c55e;
+.destaque-card {
+  border: 2px solid #22c55e;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #22c55e;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
   text-decoration: none;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
