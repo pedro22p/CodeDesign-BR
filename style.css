@@ -1,21 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: Arial;
   background: #0f172a;
   color: white;
 }
 
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   background: #020617;
+}
+
+.logo {
+  height: 40px;
 }
 
 .logo-area {
@@ -24,37 +22,30 @@ header {
   gap: 10px;
 }
 
-.logo {
-  height: 40px;
+nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
 }
 
-/* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .urgencia {
   color: #22c55e;
-  margin-bottom: 10px;
 }
 
-/* BOTÃO */
 .btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 12px 25px;
   background: #22c55e;
   color: black;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -64,23 +55,6 @@ header {
 
 .card {
   background: #1e293b;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
-  text-align: center;
-}
-
-.destaque-card {
-  border: 2px solid #22c55e;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #22c55e;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 24px;
-  text-decoration: none;
 }
