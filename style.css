@@ -1,28 +1,70 @@
-body {
+* {
   margin: 0;
-  font-family: Arial;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background: #0f172a;
   color: white;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 20px 40px;
   background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+/* MENU */
 nav a {
-  margin: 10px;
+  margin-left: 20px;
   color: white;
   text-decoration: none;
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #22c55e;
+}
+
+/* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* BOTÃO */
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -30,18 +72,67 @@ nav a {
   color: black;
   border-radius: 8px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+  background: #16a34a;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 20px;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .card {
   background: #1e293b;
   padding: 30px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 20px;
   text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #22c55e;
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
