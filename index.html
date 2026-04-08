@@ -1,99 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeDesign BR | Design & Desenvolvimento</title>
-
-    <!-- Google AdSense - Script Único (Gerencia anúncios automáticos e manuais) -->
-    <script async src="https://googlesyndication.com"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeDesign BR - Criação de Sites</title>
+  <link rel="stylesheet" href="style.css">
     
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="logo.png?v=1">
-    <link rel="shortcut icon" href="logo.png?v=1" type="image/x-icon">
-    <link rel="apple-touch-icon" href="logo.png?v=1">
-    
-    <link rel="stylesheet" href="style.css">
+  <!-- Google AdSense -->
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=SEU_ID"
+    crossorigin="anonymous"></script>
 
-    <style>
-        /* Estilo para o anúncio não quebrar o layout */
-        .ad-container {
-            margin: 40px auto;
-            text-align: center;
-            max-width: 100%;
-            overflow: hidden;
-            background: #f4f4f4; 
-            padding: 15px;
-            border-radius: 8px;
-            min-height: 100px;
-        }
-        /* Garantindo que o link do Whats pareça um botão se quiser */
-        #btn-whats {
-            font-weight: bold;
-            color: #25d366;
-            text-decoration: none;
-        }
-    </style>
 </head>
-
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Logo CodeDesign BR" width="50">
-            <h1>CodeDesign BR</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h2>BEM-VINDO ao CodeDesign BR</h2>
-            <p>Sua solução completa para design e desenvolvimento web moderno e seguro.</p>
-        </section>
+<header>
+  <h1>CodeDesign BR</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-        <section id="services">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li>Design Web (Canva para HTML)</li>
-                <li>Desenvolvimento Web Seguro</li>
-                <li>Otimização SEO</li>
-                <li>Consultoria Técnica</li>
-            </ul>
-        </section>
+<section class="hero">
+  <h2>Criação de Sites Profissionais 🚀</h2>
+  <p>Sites rápidos, modernos e personalizados para o seu negócio</p>
+  <a href="#contato" class="btn">Solicitar Orçamento</a>
+</section>
 
-        <!-- BLOCO DE ANÚNCIO MANUAL -->
-        <div class="ad-container">
-            <p style="font-size: 10px; color: #999; margin-bottom: 5px;">Publicidade</p>
-            
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-4884573718974501"
-                 data-ad-slot="INSIRA_AQUI_O_NUMERO_DO_SLOT" 
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="cards">
+    <div class="card">💻 Sites Personalizados</div>
+    <div class="card">📱 Responsivo (Celular)</div>
+    <div class="card">⚡ Sites Rápidos</div>
+    <div class="card">🎮 Desenvolvimento de Jogos</div>
+  </div>
+</section>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <!-- Lembre-se de colocar seu número após o / no link abaixo -->
-            <p>WhatsApp: <a href="https://wa.me" target="_blank" id="btn-whats">Falar com o Especialista</a></p>
-        </section>
-    </main>
+<section id="portfolio">
+  <h2>Portfólio</h2>
+  <p>Em breve você verá projetos incríveis aqui 👨‍💻</p>
+</section>
 
-    <footer>
-        <p>&copy; 2026 CodeDesign BR - Desenvolvido com foco em performance e segurança.</p>
-    </footer>
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Fale comigo pelo WhatsApp:</p>
+  <a class="btn" href="https://wa.me/SEUNUMERO">Chamar no WhatsApp</a>
+</section>
 
-    <script src="script.js"></script>
+<footer>
+  <p>© 2026 CodeDesign BR</p>
+  <a href="privacidade.html">Política de Privacidade</a>
+</footer>
+
 </body>
 </html>
